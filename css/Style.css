@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+section{
+  padding: 100px 0 50px;
+}
+.row{
+    /*background-color:#614cb4  ;*/
+    display: flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-item{
+    align-items: center;
+}
+
+.align-content{
+    align-content: center;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-70{
+    width: 80%;
+}
+.w-50{
+    width: 50%;
+}
+
+.w-33{
+    width: 33%;
+}
+
+
+.w-67{
+    width: 67%;
+}
+
+.container{
+    width: 1120px;
+    margin: 0 auto;
+
+}
+
+.title{
+    color: #151515;
+    font-size: 42px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* ==================== Header(s)======================= */
+
+
+.header{
+    width:100%;
+    background-color:rgba(97, 76, 180, 1);
+    padding: 0 20px; 
+    position: fixed;
+}
+
+.logo{
+    height: 90px;
+    width: 100px;
+    /*font-size: 30px;*/
+
+}
+
+
+
+.navbar ul li{
+    display: inline-block;
+    
+}
+
+.navbar ul li a{
+    color: #ffff;
+    position: relative;
+    margin : 12px 12px;
+}
+
+   
+
+
+.navbar ul li a:before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 1;
+    top: 20px;
+    bottom: 0;    
+    background-color:#ffff;
+    transition: all 0.4s ease 0s;
+    
+}
+
+
+.navbar ul li a:hover:before{
+    
+    width: 40%;       
+}
+
+.navbar ul li i{
+    color: #ffff;
+    margin:  15px 12px;
+    font-size: 25px;
+}
+
+.user_drop{
+    display: none;
+ 
+}
+.navbar ul li:hover .user_drop{
+    display: block;
+    position: absolute;
+    background-color: rgba(97, 76, 180, 1);
+    top: 65%;
+    margin-left:-15px; 
+    border-radius: 15px;
+
+
+}
+
+.navbar ul li:hover .user_drop ul{
+    display: block;
+    margin: 10px;
+}
+
+.navbar ul li:hover .user_drop ul li{
+    display: block;
+}
+
+
+/*=========Signup page(S)=========*/
+
+.signup_window{
+    height: 100vh;
+    background-color:rgba(97, 76, 180, 1);
+}
+
+.signup_sub{
+    flex-direction: column;
+    background-color: #ffff;
+    border-radius: 15px;
+    padding: 50px 25px 25px; 
+    margin:auto 0;
+}
+
+.signup_sub h2{
+    color: #151515;
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.signup_box{
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 0 40px 0px #d9e2fd;
+
+}
+
+.signup_box i{
+         color: #6654c6;
+         font-size: 30px;
+         margin: 5px 5px;
+}
+
+.signup_box .signup_box_input1 input{
+    border: none;
+    width: 48%;
+    padding: 10px;
+    color: #858585;
+    font-size: 16px;
+}
+
+.signup_box input{
+    border: none;
+    width: 80%;
+    padding: 10px;
+    color: #858585;
+    font-size: 16px;
+}
+
+
+
+.signup_box_radio{
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 0 40px 0px #d9e2fd;
+
+}
+
+.signup_box_radio_sub i{
+        color: #6654c6;
+        font-size: 30px;
+        margin: 5px 5px 5px 10px;
+}
+
+.signup_box_radio_sub input{
+    margin-left: 15px;
+}
+.signup_box_btn button{
+
+     border: 1px solid #ffff;
+     border-radius: 50px;
+     margin: 0 20px 20px 0;
+     padding: 15px 25px;
+     background-color: #6e61e3; 
+     color: #ffff;
+     font-width: 800;   
+     font-size: 20px;
+
+}
+
+.signup_sub h4{
+    font-weight: 400;
+}
+
+.signup_sub h4 a{
+    color: rgb(97 76 180);
+    margin: 0 5px;
+    padding-right:15px;
+}
+/*=========signup page(E)=========*/
+
+
+/*=========Login page(S)=========*/
+
+.login_box{
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 40px 0px #d9e2fd;
+
+}
+
+.login_box i{
+         color: #6654c6;
+         font-size: 30px;
+         margin: 5px 5px;
+}
+
+.login_box input{
+    border: none;
+    width: 80%;
+    padding: 10px;
+    color: #858585;
+    font-size: 16px;
+}
+/*=========Login page(E)=========*/
+
+/* ==================== Header(E)======================= */
+
+
+
+
+/*=====================Banner(S)========================*/
+
+.banner{
+    background-color: #695ad4;
+    height: 100vh; 
+}
+
+.banner_left{
+    padding: 100px 15px 40px;
+}
+
+.banner_left h2{
+    font-size: 42px;
+    color: #ffff;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.banner_left p{
+
+    font-size: 16px;
+    color: #ffff;
+    margin-bottom: 25px;
+    font-weight: 200;
+
+}
+
+.btn_left{
+    border: 1px solid #ffff;
+    margin: 0 20px 20px 0;
+    padding: 15px 25px;
+    background-color: #ffff; 
+    color: #000;
+    font-width: 800; 
+}
+
+.btn_right{
+    border: 1px solid #ffff;
+    margin: 0 20px 20px 0;
+    padding: 15px 25px;
+    /*background-color: #ffff; */
+    color: #fff;
+    font-width: 800; 
+}
+
+.banner_img{
+    height: 650px;
+    width: 500px;
+}
+
+
+
+.contact_left{
+    color: #858585;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+.contact_left_box{
+     background-color: #ffff;
+     margin-bottom: 15px;
+     padding: 15px;
+     text-align: center;
+}
+
+.contact_left_box i{
+     font-size: 40px;
+     color: #6654c6;
+}
+
+.contact_left_box h5{
+    color: #151515;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.contact_right{
+    color: #858585;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 30px;
+        flex-direction: column;
+
+}
+
+.contact_right h3{
+    color: #151515;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.contact_right p{
+    margin-bottom: 25px;
+}
+
+
+.contact_right form input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #858585;
+    font-size: 16px;
+    border: none;
+    line-height: 2;
+}
+
+.contact_right textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #858585;
+    font-size: 16px;
+    border: none;
+    line-height: 1;
+}
+
+.contact_right form button{
+     border: 1px solid #ffff;
+     margin: 0 20px 20px 0;
+     padding: 15px 25px;
+     background-color: #6e61e3; 
+     color: #ffff;
+     font-width: 800;   
+     font-size: 20px;
+}
+        
+/*=====================Banner(E)========================*/
+
