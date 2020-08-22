@@ -38,11 +38,17 @@ textarea:focus{
 }
 
 section{
-  padding: 100px 0 50px;
+  padding: 100px 0 80px;
+  z-index: 1;
+  position: relative;
 }
 .row{
     /*background-color:#614cb4  ;*/
     display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
 .justify-content-between{
@@ -76,10 +82,19 @@ section{
     width: 33%;
 }
 
+.w-40{
+    width: 40%
+}
+
 
 .w-67{
     width: 67%;
 }
+
+.m-15{
+    margin: 0 15px;
+}
+
 
 .container{
     width: 1120px;
@@ -90,7 +105,7 @@ section{
 .title{
     color: #151515;
     font-size: 42px;
-    margin-bottom: 8px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
@@ -102,6 +117,7 @@ section{
     background-color:rgba(97, 76, 180, 1);
     padding: 0 20px; 
     position: fixed;
+    z-index: 30;
 }
 
 .logo{
@@ -133,7 +149,7 @@ section{
     height: 2px;
     width: 0;
     left: 1;
-    top: 20px;
+    top: 23px;
     bottom: 0;    
     background-color:#ffff;
     transition: all 0.4s ease 0s;
@@ -163,6 +179,7 @@ section{
     top: 65%;
     margin-left:-15px; 
     border-radius: 15px;
+    padding: 10px 10px;
 
 
 }
@@ -302,14 +319,12 @@ section{
 
 /* ==================== Header(E)======================= */
 
-
-
-
 /*=====================Banner(S)========================*/
 
 .banner{
     background-color: #695ad4;
     height: 100vh; 
+    max-width: 100%;
 }
 
 .banner_left{
@@ -355,7 +370,225 @@ section{
     width: 500px;
 }
 
+/*=====================Banner(E)========================*/
 
+
+
+/*=====================About(S)=========================*/
+
+.about_box{
+    font-size: 16px;
+    padding: 0 15px;
+    color: #858585;
+}
+
+.about_box_detail{
+    border: 1px solid #dfdfdf;
+    margin: 10px 0;
+    padding: 60px;
+    background-color: #ffff;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+
+.about_box_detail i{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.about_box_detail h4{
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.about_box_detail p{
+    font-weight: 400;
+}
+
+.about_box_detail:hover{
+    box-shadow: 0px 25px 35px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+} 
+
+.about_box_detail:hover i{
+    color: #614cb4;
+}
+
+
+.preface_box2 h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.preface_box2 p{
+    font-weight: 200;
+    margin-bottom: 25px;
+ }   
+
+
+.android_btn{
+    margin-right: 40px;
+    margin-bottom: 25px;
+    padding: 15px 25px 15px 60px;
+    display: inline-block;  
+    background-color: #5a02b4;
+    color: #fff;
+    position: relative;
+}
+
+.android_btn a{
+    color: #fff;
+    display: inline-block;
+}
+
+.android_btn a i{
+    position: absolute;
+    font-size: 30px;
+    top: 26%;
+    color: #fff;
+    left:25px;
+}
+
+.about1_img img{
+    z-index: 3;
+}
+
+.about2{
+    background-color: #f1f1f1;
+}
+
+.circle{
+    width: 600px;
+    height: 500px;
+    background-color: #5a02b4;
+    border-radius: 100%;
+    position: absolute;
+    left: -240px;
+    top: 140px;
+    z-index: -1;
+
+
+
+}
+
+.about2_box{
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 15px;
+    margin: 10px 0;
+
+}
+
+.about2_box i{
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: #5a02b4;
+}
+
+.about2_box h4{
+    color: #151515;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about2_box p{
+    font-weight: 200;
+}
+
+.about2_arrow{
+    font-size: 45px;
+    text-align: center;
+    display: inline-block;
+    color: #5a02b4;
+}
+
+.about2_col{
+    text-align: center;
+    width: 20%;
+
+}
+/*=====================About(E)=========================*/
+
+
+
+
+/*=====================Feature(S)=======================*/
+
+.feature_box{
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.feature_subbox{
+    padding: 0 15px;
+    position: relative;
+    width: 50%;
+}
+
+.single_feature{
+    border: none;
+    margin: 20px 0;
+    transition: all 0.5s ease 0s;
+}
+
+.single_feature:hover{
+    transform: translateY(-10px);
+}
+
+.single_feature:hover i{
+    color: #5a02b4;
+}
+
+.single_feature:hover h4{
+    color: #5a02b4;
+}
+
+.single_feature i{
+    color: #858585;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.single_feature h4{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.single_feature p{
+    color: #858585;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.iphone-1{
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    top: -250px;
+}
+
+.iphone-2{
+    position: absolute;
+    z-index: 0;
+    left: 200px;
+    top: -250px;
+}
+/*=====================Feature(E)=======================*/
+
+
+
+
+
+/*=====================Contact(S)========================*/
 
 .contact_left{
     color: #858585;
@@ -431,6 +664,9 @@ section{
      font-width: 800;   
      font-size: 20px;
 }
+
+/*=====================Contact(E)========================*/
         
-/*=====================Banner(E)========================*/
+
+
 
