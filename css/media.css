@@ -3,7 +3,17 @@
 }
 
 @media (max-width: 768px){
-	
+	.navbar ul{
+		display: block;
+	}
+
+	.navbar ul li{
+		display: block;
+	}
+
+	.navbar ul li:nth-child(9){
+		display: block;
+	}
 }
 
 @media (max-width: 600px){

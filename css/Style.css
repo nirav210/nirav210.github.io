@@ -37,6 +37,11 @@ textarea:focus{
 
 }
 
+p{
+    font-family: 'Quicksand', sans-serif;
+
+}
+
 section{
   padding: 100px 0 80px;
   z-index: 1;
@@ -97,7 +102,7 @@ section{
 
 
 .container{
-    width: 1120px;
+    max-width: 1140px;
     margin: 0 auto;
 
 }
@@ -140,7 +145,9 @@ section{
     margin : 12px 12px;
 }
 
-   
+.navbar ul li:nth-child(9){
+    display: none;
+}   
 
 
 .navbar ul li a:before{
@@ -197,8 +204,9 @@ section{
 /*=========Signup page(S)=========*/
 
 .signup_window{
-    height: 100vh;
-    background-color:rgba(97, 76, 180, 1);
+    /* height: 100vh; */
+    background-color:#695ad4;
+    padding: 200px 0 80px;
 }
 
 .signup_sub{
@@ -207,6 +215,7 @@ section{
     border-radius: 15px;
     padding: 50px 25px 25px; 
     margin:auto 0;
+    
 }
 
 .signup_sub h2{
@@ -322,9 +331,9 @@ section{
 /*=====================Banner(S)========================*/
 
 .banner{
+    width: 100%;
     background-color: #695ad4;
     height: 100vh; 
-    max-width: 100%;
 }
 
 .banner_left{
@@ -480,7 +489,12 @@ section{
     text-align: center;
     padding: 50px 15px;
     margin: 10px 0;
+    transition: all 0.5s ease 0s;
+}
 
+.about2_box:hover{
+    box-shadow: 0px 25px 35px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
 }
 
 .about2_box i{
@@ -586,6 +600,87 @@ section{
 
 
 
+/*=====================Blog(S)=======================*/
+
+.blog_box{
+    width: 33.33%;
+    position: relative;
+    padding: 0 15px;
+}
+
+.blog_detail{
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 76px 6px rgb(181 167 236);
+}
+
+.blog_image{
+    position: relative;
+}
+
+.blog_image img{
+    width: 100%;
+    height: auto;
+}
+
+.blog_content{
+    padding: 15px;
+}
+
+.blog_meta{
+    margin-bottom: 15px;
+}
+
+.blog_meta ul li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+.blog_meta ul li a{
+    color: #858585;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.blog_meta ul li a:hover {
+    color: #5a02b4;
+}
+
+.blog_content a h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #151515;
+}
+
+.blog_content a h2:hover{
+    color: #5a02b4;
+}
+
+.blog_content p{
+    font-size: 16px;
+    color: #858585;
+    margin-bottom: 16px;
+}
+
+.read_more{
+    padding: 12.5px 15px;
+    border: 1px solid #dfdfdf;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #5a02b4;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.5s ease 0s;
+
+}
+
+.read_more:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/*=====================Blog(E)=======================*/
 
 
 /*=====================Contact(S)========================*/
