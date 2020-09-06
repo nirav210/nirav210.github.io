@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+
 }
 
 html{
@@ -24,6 +25,7 @@ ul,ol{
 }
 
 a{
+
     text-decoration: none;
 }
 
@@ -119,8 +121,7 @@ section{
 
 .header{
     width:100%;
-    background-color:rgba(97, 76, 180, 1);
-    padding: 0 20px; 
+    background-color: #5a02b4;
     position: fixed;
     z-index: 30;
 }
@@ -128,11 +129,20 @@ section{
 .logo{
     height: 90px;
     width: 100px;
-    /*font-size: 30px;*/
+    
 
 }
 
+.menu{
+    color: #fff;
+    font-size: 26px;
+    display: none; 
+     
+}
 
+#toggle{
+    display: none;
+}
 
 .navbar ul li{
     display: inline-block;
@@ -145,9 +155,7 @@ section{
     margin : 12px 12px;
 }
 
-.navbar ul li:nth-child(9){
-    display: none;
-}   
+   
 
 
 .navbar ul li a:before{
@@ -175,37 +183,12 @@ section{
     font-size: 25px;
 }
 
-.user_drop{
-    display: none;
- 
-}
-.navbar ul li:hover .user_drop{
-    display: block;
-    position: absolute;
-    background-color: rgba(97, 76, 180, 1);
-    top: 65%;
-    margin-left:-15px; 
-    border-radius: 15px;
-    padding: 10px 10px;
-
-
-}
-
-.navbar ul li:hover .user_drop ul{
-    display: block;
-    margin: 10px;
-}
-
-.navbar ul li:hover .user_drop ul li{
-    display: block;
-}
-
-
 /*=========Signup page(S)=========*/
 
 .signup_window{
     /* height: 100vh; */
-    background-color:#695ad4;
+    background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+    background-color: #5a02b4;
     padding: 200px 0 80px;
 }
 
@@ -234,7 +217,7 @@ section{
 }
 
 .signup_box i{
-         color: #6654c6;
+         color: #5a02b4;
          font-size: 30px;
          margin: 5px 5px;
 }
@@ -267,7 +250,7 @@ section{
 }
 
 .signup_box_radio_sub i{
-        color: #6654c6;
+        color: #5a02b4;
         font-size: 30px;
         margin: 5px 5px 5px 10px;
 }
@@ -281,7 +264,7 @@ section{
      border-radius: 50px;
      margin: 0 20px 20px 0;
      padding: 15px 25px;
-     background-color: #6e61e3; 
+     background-color: #5a02b4; 
      color: #ffff;
      font-width: 800;   
      font-size: 20px;
@@ -293,7 +276,7 @@ section{
 }
 
 .signup_sub h4 a{
-    color: rgb(97 76 180);
+    color: #5a02b4;
     margin: 0 5px;
     padding-right:15px;
 }
@@ -312,7 +295,7 @@ section{
 }
 
 .login_box i{
-         color: #6654c6;
+         color: #5a02b4;
          font-size: 30px;
          margin: 5px 5px;
 }
@@ -332,7 +315,9 @@ section{
 
 .banner{
     width: 100%;
-    background-color: #695ad4;
+    /*margin-right: -15px; */
+    background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+    background-color: #5a02b4;
     height: 100vh; 
 }
 
@@ -369,13 +354,14 @@ section{
     border: 1px solid #ffff;
     margin: 0 20px 20px 0;
     padding: 15px 25px;
+    position: relative;
     /*background-color: #ffff; */
     color: #fff;
     font-width: 800; 
 }
 
 .banner_img{
-    height: 650px;
+    height: 500px;
     width: 500px;
 }
 
@@ -598,6 +584,16 @@ section{
 }
 /*=====================Feature(E)=======================*/
 
+
+
+/*=====================Testimonial(S)=======================*/
+
+.testimonial{
+    background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+    background-color: #5a02b4;
+}
+
+/*=====================Testimonial(E)=======================*/
 
 
 /*=====================Blog(S)=======================*/
