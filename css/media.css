@@ -1,18 +1,44 @@
+
+
 @media only screen and (max-width: 992px){
-	.container{
-		max-width: 992px;
+
+	
+	.banner_img{
+		height: 457px;
+       	width: 446px;
+    }
+
+	.navbar ul li a{
+		margin-left: 0;
 	}
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 910px){
+	.about1_img img{
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 892px){
 	
+	.sl_wrap{
+		flex-wrap: wrap;
+	}
+
 	
+	.banner_left{
+		width: 100%;
+
+	}
+	.banner_right{
+		text-align: center;
+		width: 100%;
+	}
+
 	.menu{
 		display: block;
 		position: relative;
-		padding-left: 20px; 
-		padding-bottom: 15px;
 	}
 
 	.navbar{
@@ -47,18 +73,134 @@
  		/*width: 25px;*/
  	}
 
+	.banner_left h2{
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.testimonial_box{
+		width: 40%;
+	}	
 
 
+}
+
+@media only screen and (max-width: 874px){
+	.iphone-1{
+		height: 350px;
+	    width: 250px;
+	    left: 0px;
+	}	
+	
+	.iphone-2{
+		height: 350px;
+	    width: 250px;
+	    left: 87px;
+	}
+	
+}
+
+@media only screen and (max-width: 687px){
+	.sm_wrap{
+		flex-wrap: wrap;
+	}
+	.circle{
+		display: none;
+	}
+	.about1_img{
+		width: 100%;
+		text-align: center;
+	}
+	.about_box{
+		width: 50%;	
+	}
+	.about2_col{
+		display: none;
+	}
+	.wsm-50{
+		width: 50%;
+	}
+	.feature_box_left{
+		width: 100%;
+	}
+	.feature_box_right{
+		display: none;
+	}
+	.blog_box{
+		width: 50%;
+	}
+	.sm_row{
+		display: flex;
+	}
+	.wsm-100{
+		width: 100%;
+	}
+	.contact_left_box{
+		width: 33%;
+	}
 }
 
 @media only screen and (max-width: 600px){
-	
+	.banner_right{
+		display: none;
+	}
+	.msm_wrap{
+		flex-wrap: wrap;
+	}
+	.about_box{
+		width: 70%;	
+	}
+	.testimonial_box{
+		width: 80%;
+	}
 }
 
 @media only screen and (max-width: 480px){
+	.xsm_wrap{
+		flex-wrap: wrap;
+	}
+	.banner{
+		height: 100vh;
+	}
+	.banner_left{
+		padding-top: 30px;
+	}
+	.about1_img img{
+		width: 360px;
+	}
+	.wxsm-100{
+		width: 100%;
+	}
+	.about_box{
+		width: 100%;	
+	}
+	.blog_box{
+		width: 100%;
+	}
+	.testimonial_box{
+		width: 80%;
+	}
+	.contact_left_box{
+		width: 60%
+	}
+	.contact_left_box_last{
+		width: 60%
+	}
 	
 }
-
+@media only screen and (max-width: 420px){
+	.single_feature h4{
+		font-size: 17px;
+	}	
+	.single_feature p{
+		font-size: 13px;
+	}
+	.contact_left_box{
+		width: 80%;
+	}
+	.contact_left_box_last{
+		width: 80%;
+	}
+}
 @media only screen and (max-width: 320px){
 	
 }

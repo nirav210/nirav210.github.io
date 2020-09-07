@@ -6,14 +6,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/Style.css">
+     <link rel="stylesheet" href="css/media.css">
     <script src="https://kit.fontawesome.com/f095afb4bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <header class="header " >
-        <div class="container">
-            <div class="row justify-content-between align-item ">
-                <a href="index.html"><img src="image/logo.png" class="logo"></a>
+<header class="header" >   
+        <div class="row w-100 justify-content-between align-item ">
+            <a href="index.html"><img src="image/logo.png" class="logo"></a>
+            <label class="menu" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"></input>
                <div class="navbar"> 
                     <ul>
                         <li>
@@ -27,11 +28,7 @@
                         </li>
                         <li>
                             <a href="index.html#testimonial">Testimonial</a>
-                        </li>
-                        <li>
-                            <a href="index.html#screenshot">Screenshot</a>
-                        </li>
-                        
+                        </li>                        
                         <li>
                             <a href="index.html#blog">Blog</a>
                         </li>
@@ -40,44 +37,38 @@
                         </li>
                         <li>
                             <a href="signup.html" target="abc">Sign up</a> 
-                        </li>                       
+                        </li>
                         <li>
                             <a href="login.html" target="abc">Login</a> 
-                        </li>
-                    </ul>
+                        </li>                   
+                   </ul>
                 </div>
-            </div>
-        </div>
-    </header>
-    
+        </div>   
+</header>    
     <div class="signup_window w-100 row justify-content-center align-content">
-                            <div class="signup_sub row justify-content-center align-item w-33">
-                                <h2>Login</h2>
-                                <form>
-                                    <div class="login_box row">
-                                        <i class="far fa-user-circle"></i>
-                                            <input type="name" name="name" placeholder="UserName">                                                                       
-                                    </div>    
-                                    <div class="login_box row">
-                                        <i class="fas fa-lock"></i>
-                                        <input type="password" name="password" placeholder="Password">
-                                    </div>
-                                   
+        <div class="signup_sub row justify-content-center align-item">
+            <h2>Login</h2>
+            <form>
+                <div class="login_box row">
+                    <i class="far fa-user-circle"></i>
+                        <input type="name" name="name" placeholder="UserName">                                                                       
+                </div>    
+                <div class="login_box row">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+               
 
-                                      
-                                    <!-- <textarea placeholder="Your Message" rows="4"></textarea>  --> 
-                                    <div class="signup_box_btn row justify-content-center">
-                                          <button>Log In</button>
-                                    </div>
+                  
+                <!-- <textarea placeholder="Your Message" rows="4"></textarea>  --> 
+                <div class="signup_box_btn row justify-content-center">
+                      <button>Log In</button>
+                </div>
 
-                                </form>
-                                <h4>Create New Account?<a href="signup.html">SignUp</a></h4>
-                                <div><h4><a href="index.html" class="">Home</a></h4></div>
-
-
-
-                            </div>
+            </form>
+            <h4>Create New Account?<a href="signup.html">SignUp</a></h4>
+            <div><h4><a href="index.html" class="">Home</a></h4></div>
+        </div>
 </div>
-
 </body>
 </html>
