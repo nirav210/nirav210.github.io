@@ -132,6 +132,9 @@
 	.msm_wrap{
 		flex-wrap: wrap;
 	}
+	.signup_window{
+		padding: 220px 0 200px;
+	}
 	.about_box{
 		width: 70%;	
 	}

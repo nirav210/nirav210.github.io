@@ -210,7 +210,7 @@ section{
     background-image: url(../image/header-bg.jpg);
     position: relative;
     background-size: cover; 
-    padding: 220px 0 200px;
+    padding: 160px 0 80px;
 
 }
 
@@ -313,7 +313,7 @@ section{
     width: 10%;
 }
 .signup_checkbox a{
-    color: ##d23d0;  
+    color: #d23d0f;  
     margin: 0 5px;  
 }
 
