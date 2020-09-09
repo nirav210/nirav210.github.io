@@ -25,16 +25,6 @@
 	}
 
 	
-	.banner_left{
-		width: 100%;
-		margin-right: 40%;
-
-	}
-	.banner_right{
-		text-align: center;
-		width: 100%;
-	}
-
 	.menu{
 		display: block;
 		position: relative;
@@ -92,11 +82,22 @@
 		flex-wrap: wrap;
 	}
 	.banner_left{
-		margin-right:0;
+		width: 100%;
+		margin-right: 0;
+
 	}
+	.banner_right{
+		text-align: center;
+		width: 100%;
+	}
+	
 	.about1_img{
 		width: 100%;
 		text-align: center;
+	}
+	.preface_box2{
+		padding: 0 15px;
+		width: 100%;
 	}
 	.about_box{
 		width: 50%;	
@@ -111,7 +112,7 @@
 		width: 100%;
 	}
 	.feature_box_right{
-		display: none;
+		width: 100%;
 	}
 	.blog_box{
 		width: 50%;
