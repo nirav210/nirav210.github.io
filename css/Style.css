@@ -197,14 +197,23 @@ section{
 /*=========Signup page(S)=========*/
 
 .signup_window{
-
-    /*background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);*/
-    /*background-color: rgba(0,0,0.5);*/
     background-image: url(../image/header-bg.jpg);
     position: relative;
     background-size: cover; 
     padding: 160px 0 110px;
+    z-index: 1;
 
+}
+
+.signup_window:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(225,225,225,0.3);
+    z-index:-1; 
 }
 
 .signup_sub{
