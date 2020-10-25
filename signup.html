@@ -4,10 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppNext-SignUp</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/Style.css">
      <link rel="stylesheet" href="css/media.css">
-    <script src="https://kit.fontawesome.com/f095afb4bc.js" crossorigin="anonymous"></script>
+     <style type="text/css">
+         span{
+            margin: 0 54px;
+            font-size: 13px;
+            color: darkred;
+         }
+     </style>
 </head>
 <body>
 <header class="header" >   
@@ -49,58 +55,59 @@
     <div class="signup_window w-100 row justify-content-center align-content">
         <div class="signup_sub row justify-content-center align-item">
             <h2>Sign Up</h2>
-            <form>
-                <div class="signup_box row">
-                    <i class="far fa-user-circle"></i>
-                    <div class="signup_box_input1 row">
-                        <input type="name" name="name" placeholder="First Name">
-                        <input type="name" name="name" placeholder="Last Name">
-                    </div>   
+            <form name="signup" action="login.html" onsubmit="return validation()">
+                <div class="signup_box row" id="c1">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <div class="signup_box_input1 row" >
+                        <input type="name" name="fn" placeholder="First Name">
+                        <input type="name" name="ln" placeholder="Last Name">
+
+                    </div>
                 </div>    
-                <div class="signup_box row">
-                    <i class="fas fa-envelope-open"></i>
+                <div class="signup_box row" id="c2" >
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                     <input type="email" name="email" placeholder="Email Address">
                 </div>
-                <div class="signup_box row">
-                    <i class="fas fa-lock"></i>
+                <div class="signup_box row" id="c3">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                     <input type="password" name="password" placeholder="Enter Password">
                 </div>
-                <div class="signup_box row">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" name="password" placeholder="Confirm Password">
+                <div class="signup_box row" id="c4">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    <input type="password" name="cnf_password" placeholder="Confirm Password">
                 </div>
-                <div class="signup_box row">
+                <div class="signup_box row" id="c5">
                     <i class="fa fa-globe" aria-hidden="true"></i>
                     <select name="country" id="country" >
                         <option id="country" value="-">Select Country</option>
                         <option id="country" value="India"> India </option>
-                        <option id="country" value="USA"> USA </option>
+                        <option id="country" value="Usa"> USA </option>
                         <option id="country" value="Dubai"> Dubai </option>
                     </select>
                 </div>
-                <div class="signup_box_radio row">
+                <div class="signup_box_radio row" id="c6">
                     <div class="signup_box_radio_sub row align-item  ">
                             <input type="radio" id="male" name="gender" value="male">
-                            <i for="male" class="fas fa-male"></i>
+                            <i class="fa fa-male" aria-hidden="true"></i>
                     </div>    
                     <div class="signup_box_radio_sub row align-item ">
                             <input type="radio" id="female" name="gender" value="female">
-                            <i class="fas fa-female"></i>                                        
+                            <i class="fa fa-female" aria-hidden="true"></i>
                     </div>        
                 </div>
-                <div class="signup_checkbox row">
+                <div class="signup_checkbox row" id="c7">
                     <input type="checkbox" name="checkbox"><p> I have read and agree to the<a href="#">Tearms of Service</a></p>
                 </div>  
                 <!-- <textarea placeholder="Your Message" rows="4"></textarea>  --> 
                 <div class="signup_box_btn row justify-content-center">
-                      <button>Create Account</button>
+                      <input type="submit" value="Create Account">
                 </div>
             </form>
             <h4>Already Account?<a href="login.html">Login</a></h4>
             <div><h4><a href="index.html" class="">Home</a></h4></div>
         </div>
 </div>
-
+<script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
 

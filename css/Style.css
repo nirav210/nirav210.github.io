@@ -211,7 +211,7 @@ section{
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(225,225,225,0.3);
+    background-color: rgba(225,225,225,0.1);
     z-index:-1; 
 }
 
@@ -232,7 +232,8 @@ section{
 }
 
 .signup_box{
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-top: 20px;
     border-radius: 15px;
     width: 80%;
     position: relative;
@@ -272,7 +273,8 @@ section{
 }
 
 .signup_box_radio{
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-top: 20px;
     border-radius: 15px;
     width: 80%;
     position: relative;
@@ -289,7 +291,7 @@ section{
 .signup_box_radio_sub input{
     margin-left: 15px;
 }
-.signup_box_btn button{
+.signup_box_btn input{
 
      border: 1px solid #ffff;
      border-radius: 50px;
@@ -303,7 +305,8 @@ section{
 }
 
 .signup_checkbox{
-    margin: 20px auto;
+   margin: 0 auto;
+    margin-top: 20px;
     border-radius: 15px;
     width: 80%;
     position: relative;
